@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Header{
+    background: black;
+    padding: 15px;
+    color: #fff;
+}
+.Footer{
+    background: black;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+}
+.Main{
+    background: rgb(56, 52, 52);
+    padding: 15px;
+    color: #fff;
+}
+.use{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+.grid-contern{
+    display: grid;
+    background-color: #fff;
+    padding: 10px 0;
+    gap:10px;
+    height: 50vh;
+    grid-template-areas:
+    'Hero Hero Hero'
+    'Fea Sidebar Sidebar'
+    'Tes Sidebar Sidebar';
+}
+.grid-contern > div {
+    background-color: rgba(199, 199, 199, 0.696);
+    padding: 20px ;
+
+}
+.Hero{
+    grid-area: Hero;
+    text-align: center;
+}
+.Fea{
+    grid-area: Fea;
+}
+.Tes{
+    grid-area: Tes;
+}
+.Sidebar{
+    grid-area:Sidebar ;
+}
